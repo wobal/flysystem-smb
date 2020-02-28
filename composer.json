@@ -1,5 +1,5 @@
 {
-    "name": "robgridley/flysystem-smb",
+    "name": "wobal/flysystem-smb",
     "description": "Flysystem adapter for Icewind SMB.",
     "keywords": ["smb", "samba", "flysystem"],
     "license": "MIT",
