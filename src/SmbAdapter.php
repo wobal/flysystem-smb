@@ -227,7 +227,7 @@ class SmbAdapter extends AbstractAdapter
         $location = $this->applyPathPrefix($path);
 
         try {
-            $this->share->stat($location);
+            $this->share->stat("./".$location);
         } catch (NotFoundException $e) {
             return false;
         }
@@ -324,7 +324,7 @@ class SmbAdapter extends AbstractAdapter
         $location = $this->applyPathPrefix($path);
 
         try {
-            $file = $this->share->stat($location);
+            $file = $this->share->stat("./".$location);
         } catch (NotFoundException $e) {
             return false;
         }
@@ -443,7 +443,7 @@ class SmbAdapter extends AbstractAdapter
         }
 
         try {
-            $file = $this->share->stat($location);
+            $file = $this->share->stat("./".$location);
         } catch (NotFoundException $e) {
             return false;
         }
